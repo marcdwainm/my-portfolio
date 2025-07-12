@@ -1,1 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-heading: "Funnel Display", sans-serif;
+  --font-secondary: "Playfair Display", serif;
+}
+
+@utility flex-center {
+    @apply flex justify-center items-center
+}
+
+@utility intro-text {
+  @apply text-[6vw] tracking-tighter leading-[1.2]
+}
+
+.paper{
+  background-image: url(".\assets\paper.jpg");
+}
+
+#intro-highlighted {
+  background-color: rgb(14, 64, 138);
+  mix-blend-mode: color-burn;
+  color: white;
+}
+
+.developer {
+  background-image: url(".\assets\developer-2.jpg");
+  background-size: 40vw;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.creator {
+  background-image: url(".\assets\creator.jpg");
+  background-size: 50vw;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.professional{
+  background-image: url(".\assets\chart.png");
+  background-size: 30vw;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.enthusiast{
+  background-image: url(".\assets\enthusiast.jpg");
+  background-size: 30vw;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke: 1px black; /* Border: width + color */
+}

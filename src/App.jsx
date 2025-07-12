@@ -1,4 +1,8 @@
+import Intro from "./sections/Intro";
+
 export default function App() {
 
-  return <div className="min-h-screen bg-gray-50 text-gray-800"></div>
+  return <div className="min-h-screen bg-gray-200 text-gray-800">
+    <Intro />
+  </div>
 }

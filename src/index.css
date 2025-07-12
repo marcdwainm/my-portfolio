@@ -1,1 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-black: #222123;
+}
+
+@layer utilities {
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .absolute-center {
+        @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+    }
+}
+
+@layer components {
+    .font-logo {
+        font-family: "Oswald", serif;
+    }
+
+    .intro-wrapper {
+        @apply min-h-dvh w-full flex justify-center items-center;
+    }
+}

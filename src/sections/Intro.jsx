@@ -51,14 +51,14 @@ export default function Intro() {
         gsap.to(enterSplit.current.chars, to);
 
         gsap.to("#logo-bracket-1", {
-            x: hasHovered ? "60px": 0,
-            duration: hasHovered ? 1 : 0.5,
+            x: hasHovered ? "-15px": 0,
+            duration: 0.5,
             ease: "power4.inOut",
         })
         
         gsap.to("#logo-bracket-2", {
-            x: hasHovered ? "-60px": 0,
-            duration: hasHovered ? 1 : 0.5,
+            x: hasHovered ? "15px": 0,
+            duration: 0.5,
             ease: "power4.inOut",
         })
     }, [hasHovered, isClickable]);
@@ -75,7 +75,7 @@ export default function Intro() {
                     </h1>
                     <div className="absolute overflow-hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 color-black font-logo text-center whitespace-nowrap w-max md:text-[4.5rem] text-6xl tracking-tighter">
                         <h1 id="enter" ref={enterRef} className="-translate-y-[100px]">
-                            ENTER
+                            KNOW MORE
                         </h1>
                     </div>
                 </div>

@@ -39,7 +39,7 @@ export default function Intro({ handlePageChange }) {
             opacity: 0,
             stagger: { each: 0.02, from: "center" },
             ease: "power4.inOut",
-            duration: 1.3,
+            duration: 1.2,
             delay: 0.9,
             onComplete: () => setTimeout(() => setIsClickable(true), 1000),
         }, "<")  
@@ -136,18 +136,18 @@ export default function Intro({ handlePageChange }) {
                 <svg className="w-16 h-16 rotate-180 translate-x-[2000px]" id="logo-bracket-1" fill="#222123" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="m4.8 21.57 2.422 2.43 11.978-12-11.978-12-2.422 2.43 9.547 9.57z" />
                 </svg>
-                <div className={`relative min-w-[270px] ${isClickable ? 'cursor-pointer' : 'cursor-default'}`} onMouseEnter={() => setHasHovered(true)} onMouseLeave={() => setHasHovered(false)} onClick={changePage}>
-                    <div className="absolute overflow-hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 color-black font-logo text-center whitespace-nowrap w-max md:text-[4.5rem] text-6xl tracking-tighter">
+                <div className={`relative md:min-w-[380px] min-w-[300px] ${isClickable ? 'cursor-pointer' : 'cursor-default'}`} onMouseEnter={() => setHasHovered(true)} onMouseLeave={() => setHasHovered(false)} onClick={changePage}>
+                    <div className="absolute overflow-hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 color-black font-outfit text-center whitespace-nowrap w-max md:text-[4.5rem] text-6xl tracking-tighter">
                         <h1 id="dwain-dev" ref={dwainRef}>
                             DWAIN.DEV
                         </h1>
                     </div>
-                    <div className="absolute overflow-hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 color-black font-logo text-center whitespace-nowrap w-max md:text-[4.5rem] text-6xl tracking-tighter">
+                    <div className="absolute overflow-hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 color-black font-outfit text-center whitespace-nowrap w-max md:text-[4.5rem] text-6xl tracking-tighter">
                         <h1 id="enter" ref={enterRef} className="-translate-y-[100px]">
                             KNOW MORE
                         </h1>
                     </div>
-                    <div className="absolute overflow-hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 color-black font-logo text-center whitespace-nowrap w-max md:text-[4.5rem] text-6xl tracking-tighter">
+                    <div className="absolute overflow-hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 color-black font-outfit text-center whitespace-nowrap w-max md:text-[4.5rem] text-6xl tracking-tighter">
                         <h1 id="welcome" ref={welcomeRef} className="-translate-y-[100px]">
                             WELCOME
                         </h1>
@@ -167,13 +167,13 @@ export default function Intro({ handlePageChange }) {
                 https://github.com/marcdwainm
             </p>
             <p className="paragraphs overflow-hidden md:w-3xs w-40 absolute bottom-10 left-10 font-secondary leading-[1] md:text-[14px] text-[12px]">
-                © 2025 Magracia. Made in the Philippines. Built with the GSAP v3.13.0, React v19.1.0, Tailwind 4.1.11
+                © 2025 Magracia. Made in the Philippines. Built with the GSAP v3.13.0, React v19.1.0, Tailwind v4.1.11
             </p>
             <p className="paragraphs overflow-hidden md:w-3xs w-40 text-right absolute bottom-10 right-10 font-secondary leading-[1] md:text-[14px] text-[12px]">
                 © 2025 Dwain. All Rights Reserved.
             </p>
             <div id="difference" style={{ clipPath: "polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%)" }} className={`absolute w-full h-dvh bg-[#f3f3f3] mix-blend-difference ${isClickable ? 'cursor-pointer' : 'cursor-default'}`} onMouseEnter={() => setHasHovered(true)} onMouseLeave={() => setHasHovered(false)} onClick={changePage}>
-                <h1 className="intro-content absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:text-[15rem] text-[18rem] text-center font-logo leading-[200px] tracking-[-0.1em] mix-blend-color-dodge">
+                <h1 className="intro-content absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:text-[15rem] text-[18rem] text-center font-outfit leading-[200px] tracking-[-0.1em] mix-blend-color-dodge">
                     KNOW<br />MORE
                 </h1>
             </div>

@@ -14,14 +14,7 @@ export default function App() {
 
     
     const handlePageChange = (page) => {
-        
-        // Run animation first
-        setTransition()
-        
-        // In the middle of the animation, change page accordinly.
-        setTimeout(() => {
-            setCurrentPage(page)
-        }, 1500)
+        setCurrentPage(page)
     }
     
     const pageMapping = {
@@ -30,7 +23,7 @@ export default function App() {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-white to-[#cac9c5] text-black">
+        <div className="min-h-screen bg-gradient-to-b from-white to-[#cfcec9] text-black">
             {pageMapping[currentPage]?.()}
 
             {transition}

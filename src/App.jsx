@@ -4,15 +4,13 @@ import { useState } from "react";
 // SECTIONS
 import Intro from "./sections/Intro";
 import Landing from "./sections/Landing";
-import IntroTransition from "./transitions/IntroTransition";
 import Cursor from "./components/Cursor";
+import NavBar from "./components/NavBar";
 
 export default function App() {
 
-    const [transition, setTransition] = useState()
     const [currentPage, setCurrentPage] = useState("intro");
 
-    
     const handlePageChange = (page) => {
         setCurrentPage(page)
     }
@@ -26,9 +24,9 @@ export default function App() {
         <div className="min-h-screen bg-gradient-to-b from-white to-[#cfcec9] text-black">
             {pageMapping[currentPage]?.()}
 
-            {transition}
-
             <Cursor />
+
+            <NavBar />
         </div>
     );
 }

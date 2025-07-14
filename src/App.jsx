@@ -2,31 +2,19 @@
 import { useState } from "react";
 
 // SECTIONS
-import Intro from "./sections/Intro";
-import Landing from "./sections/Landing";
+import Loader from "./sections/Loader";
 import Cursor from "./components/Cursor";
-import NavBar from "./components/NavBar";
+import Landing from "./sections/Landing";
 
 export default function App() {
 
-    const [currentPage, setCurrentPage] = useState("intro");
-
-    const handlePageChange = (page) => {
-        setCurrentPage(page)
-    }
-    
-    const pageMapping = {
-        intro: () => <Intro handlePageChange={(page) => handlePageChange(page)} />,
-        landing: () => <Landing />
-    }
+    const [isLoadingDone, setIsLoadingDone] = useState(false);
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-white to-[#cfcec9] text-black">
-            {pageMapping[currentPage]?.()}
-
+            <Loader setIsLoadingDone={setIsLoadingDone}/>
+            <Landing isLoadingDone={isLoadingDone}/>
             <Cursor />
-
-            <NavBar />
         </div>
     );
 }

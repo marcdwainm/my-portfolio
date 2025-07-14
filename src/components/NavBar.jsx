@@ -1,8 +1,6 @@
-import React from 'react'
-
 export default function NavBar() {
-  return (
-    <div className='fixed top-0 w-full h-20 z-[9999]'>
+
+    return <div className='fixed top-0 w-full h-20 z-[9999]'>
         <div className="w-full h-full flex px-45 justify-between">
             <div className="flex items-center">
                 <h5 className="font-outfit font-bold">&lt; DWAIN.DEV &gt;</h5>
@@ -17,5 +15,4 @@ export default function NavBar() {
             </div>
         </div>  
     </div>
-  )
 }
